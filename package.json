@@ -1,0 +1,57 @@
+{
+  "name": "@magicpatterns/html-to-figma",
+  "version": "0.0.27",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/htmlToFigma.umd.cjs",
+  "module": "dist/htmlToFigma.js",
+  "exports": {
+    ".": {
+      "import": "./dist/htmlToFigma.js",
+      "require": "./dist/htmlToFigma.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "fontkit": "^2.0.4"
+  },
+  "devDependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@types/figma": "^1.0.8",
+    "@types/fontkit": "^2.0.7",
+    "@types/pako": "^2.0.3",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.19",
+    "buffer": "^6.0.3",
+    "canvas": "^2.11.2",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "framer-motion": "^11.2.9",
+    "kiwi-schema": "^0.5.0",
+    "lucide-react": "^0.379.0",
+    "pako": "^2.1.0",
+    "path": "^0.12.7",
+    "postcss": "^8.4.38",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "shadcdn": "^0.0.7",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.2.2",
+    "url": "^0.11.3",
+    "vite": "^5.2.0"
+  }
+}
